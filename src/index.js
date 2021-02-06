@@ -1,17 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM  from 'react-dom'
+// import App from './app'
+// const app =<div>nihao </div>
+// 函数式组件
+// const App = (props)=> {
+//   return  <div><h1>叶小婷{props.title}</h1> </div>
+// }
+// 类组件
+class App extends React.Component {
+  render() {
+    return (
+      <div> 未来 你好 {this.props.title}</div>
+    )
+  }
+}
 
+// const app = new App()      app.render()
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  // <div>hellow</div>,
+  // app(' is beautiful'),
+  <App title=' is so beautiful'></App>,
+  // <App/>,
+  document.querySelector('#root')
+)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
