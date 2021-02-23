@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactDOM  from 'react-dom'
 
-import ClassCss from './clsaaStyle'
+import { Example,ClassStyle} from './clsaaStyle'
+import DataMount from './DataMouted'
+
 // import App from './app'
 // const app =<div>nihao </div>
 // 函数式组件
@@ -39,9 +41,11 @@ ReactDOM.render(
   // <App title=' is so beautiful'></App>,
   // <App/>,
   <>
+  <DataMount></DataMount>
   <Title></Title>
   <Article></Article>
-  <ClassCss></ClassCss>
+  <ClassStyle></ClassStyle>
+  <Example></Example>
   </>,
   document.querySelector('#root')
 )
