@@ -1,14 +1,15 @@
-import React from 'react'
-import ReactDOM  from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
-import { Example,ClassStyle} from './clsaaStyle'
-import DataMount from './DataMouted'
+import { Example, ClassStyle } from "./clsaaStyle";
+import DataMount from "./DataMouted";
 
+import State from "./State";
 // import App from './app'
 // const app =<div>nihao </div>
 // 函数式组件
 // const App = (props)=> {
-//   return  <div><h1>叶小婷{props.title}</h1> </div>
+//   return  <div><h1>小婷{props.title}</h1> </div>
 // }
 // 类组件
 // class App extends React.Component {
@@ -22,16 +23,17 @@ import DataMount from './DataMouted'
 class Title extends React.Component {
   render() {
     return (
-      <div>我是标题</div>
-    )
+      <>
+        <div>我是标题</div>
+        {this.props.data}
+      </>
+    );
   }
 }
 
 class Article extends React.Component {
   render() {
-    return (
-      <div>我是内容</div>
-    )
+    return <div>我是内容</div>;
   }
 }
 // const app = new App()      app.render()
@@ -41,12 +43,12 @@ ReactDOM.render(
   // <App title=' is so beautiful'></App>,
   // <App/>,
   <>
-  <DataMount></DataMount>
-  <Title></Title>
-  <Article></Article>
-  <ClassStyle></ClassStyle>
-  <Example></Example>
+    <State></State>
+    <DataMount></DataMount>
+    <Title data="2021"></Title>
+    <Article></Article>
+    <ClassStyle></ClassStyle>
+    <Example></Example>
   </>,
-  document.querySelector('#root')
-)
-
+  document.querySelector("#root")
+);
