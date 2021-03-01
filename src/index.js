@@ -1,10 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
+// import Parent from "./components/props/Stateparent";
+// 引入表单组件
+import Form from "./components/from/From";
+// 引入受控组件
+// import Control from "./components/controlComponent/Control";
+// import SetData from "./components/RenderData/RenderData";
+// import Event from "./components/event/Event";
+// import { Example, ClassStyle } from "./clsaaStyle";
+// import DataMount from "./DataMouted";
 
-import { Example, ClassStyle } from "./clsaaStyle";
-import DataMount from "./DataMouted";
-
-import State from "./State";
+// import State from "./State";
 // import App from './app'
 // const app =<div>nihao </div>
 // 函数式组件
@@ -20,22 +26,22 @@ import State from "./State";
 //   }
 // }
 
-class Title extends React.Component {
-  render() {
-    return (
-      <>
-        <div>我是标题</div>
-        {this.props.data}
-      </>
-    );
-  }
-}
+// class Title extends React.Component {
+//   render() {
+//     return (
+//       <>
+//         <div>我是标题</div>
+//         {this.props.data}
+//       </>
+//     );
+//   }
+// }
 
-class Article extends React.Component {
-  render() {
-    return <div>我是内容</div>;
-  }
-}
+// class Article extends React.Component {
+//   render() {
+//     return <div>我是内容</div>;
+//   }
+// }
 // const app = new App()      app.render()
 ReactDOM.render(
   // <div>hellow</div>,
@@ -43,12 +49,17 @@ ReactDOM.render(
   // <App title=' is so beautiful'></App>,
   // <App/>,
   <>
-    <State></State>
+    <Form></Form>
+    {/* <Event></Event> */}
+    {/* <Parent></Parent> */}
+    {/* <Control></Control>
+    <SetData></SetData> */}
+    {/* <State></State>
     <DataMount></DataMount>
     <Title data="2021"></Title>
     <Article></Article>
     <ClassStyle></ClassStyle>
-    <Example></Example>
+    <Example></Example> */}
   </>,
   document.querySelector("#root")
 );
