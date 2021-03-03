@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Todo from "./Todolist/Todolist";
 // import Parent from "./components/props/Stateparent";
-// 引入表单组件
-import Form from "./components/from/From";
+// // 引入表单组件
+// import Form from "./components/from/From";
 // 引入受控组件
 // import Control from "./components/controlComponent/Control";
 // import SetData from "./components/RenderData/RenderData";
@@ -49,7 +50,8 @@ ReactDOM.render(
   // <App title=' is so beautiful'></App>,
   // <App/>,
   <>
-    <Form></Form>
+    <Todo></Todo>
+    {/* <Form></Form> */}
     {/* <Event></Event> */}
     {/* <Parent></Parent> */}
     {/* <Control></Control>

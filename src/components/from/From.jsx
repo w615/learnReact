@@ -19,7 +19,7 @@ class Form extends Component{
     }
   }
   render(){
-    return(
+    return( 
       <>
       <form onSubmit={this.handleSubmit()} >
         <input type="text" value={ this.state.textValue} onChange = {this.handleChange()}/>
