@@ -1,5 +1,5 @@
 import React from "react";
-import propTypes from "prop-types"; //类型验证
+import PropTypes from "prop-types"; //类型验证
 export default function List(props) {
   // console.log(props);
   return (
@@ -14,5 +14,5 @@ export default function List(props) {
   );
 }
 List.propTypes = {
-  list: propTypes.array,
+  list: PropTypes.array,
 };

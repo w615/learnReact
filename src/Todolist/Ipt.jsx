@@ -15,10 +15,13 @@ class Ipt extends Component {
       console.log("输入了回车键");
       if (e.keyCode === 13) {
         // 把数据传到父组件
+        console.log("enter");
         this.props.onReceiveKeyWord(this.state.value);
         this.setState({
           value: "",
         });
+      } else {
+        console.log(123);
       }
     };
   };

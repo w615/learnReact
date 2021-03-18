@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Todo from "./Todolist/Todolist";
+// 引入路由
+import Router from './router'
 // import Parent from "./components/props/Stateparent";
 // // 引入表单组件
 // import Form from "./components/from/From";
@@ -50,7 +52,8 @@ ReactDOM.render(
   // <App title=' is so beautiful'></App>,
   // <App/>,
   <>
-    <Todo></Todo>
+    <Router/>
+    {/* <Todo></Todo> */}
     {/* <Form></Form> */}
     {/* <Event></Event> */}
     {/* <Parent></Parent> */}
