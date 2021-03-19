@@ -2,7 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Todo from "./Todolist/Todolist";
 // 引入路由
-import Router from './router'
+// import Router from './router'
+// 引入高阶组件
+import Hoc from './hoc/App'
 // import Parent from "./components/props/Stateparent";
 // // 引入表单组件
 // import Form from "./components/from/From";
@@ -52,7 +54,8 @@ ReactDOM.render(
   // <App title=' is so beautiful'></App>,
   // <App/>,
   <>
-    <Router/>
+  <Hoc/>
+    {/* <Router/> */}
     {/* <Todo></Todo> */}
     {/* <Form></Form> */}
     {/* <Event></Event> */}
