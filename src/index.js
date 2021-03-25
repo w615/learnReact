@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Todo from "./Todolist/Todolist";
+// redux
+import App from './Redux/ReduxSelf/App'
 // 引入路由
 // import Router from './router'
 // 引入高阶组件
-import Hoc from './hoc/App'
+// import Hoc from './hoc/App'
 // import Parent from "./components/props/Stateparent";
 // // 引入表单组件
 // import Form from "./components/from/From";
@@ -54,7 +56,8 @@ ReactDOM.render(
   // <App title=' is so beautiful'></App>,
   // <App/>,
   <>
-  <Hoc/>
+  <App/>
+  {/* <Hoc/> */}
     {/* <Router/> */}
     {/* <Todo></Todo> */}
     {/* <Form></Form> */}
